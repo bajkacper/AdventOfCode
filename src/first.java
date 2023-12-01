@@ -23,7 +23,6 @@ public class first {
             return Integer.parseInt(String.valueOf(lastChar));
         }
 
-        // Return null or another default value if no integer is found
         return null;
     }
     public static void main(String[] args) throws FileNotFoundException {
@@ -35,8 +34,6 @@ public class first {
             int suma = 0;
             while (odczyt.hasNextLine()) {
                 zmienna = odczyt.nextLine();
-//                Matcher matcher = Pattern.compile("\\d").matcher(zmienna);
-//                int i = Integer.valueOf(matcher.group());
                 Integer i = findFirstInteger(zmienna);
                Integer z = findLastInteger(zmienna);
 
